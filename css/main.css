@@ -139,20 +139,20 @@ h1 {
 
 
 #tagline h4 {
-  font-size: 1em;
+  font-size: 1.25em;
   margin: 0;
   font-weight: 800;
   margin: 0;
-  padding: 0;
+  padding: 3% 5% 2em 5%;
 }
 
 
 #clock-wrapper {
   grid-area: clock;
-  display: flex;
+/*   display: flex; */
   padding: 3% 5%;
-  justify-content: center;
-  align-items: center;
+/*   justify-content: center;
+  align-items: center; */
   margin: 3% 5%;
   background-color: #ADB9E3;
   border-radius: 1em;
@@ -179,31 +179,33 @@ figure {
   display: flex;
   padding: 3% 5%;
   justify-content: center;
-  margin: 0;
+  margin: 3% 5%;
+  /* border: 2px solid red; */
+  border: 2em solid #ADB9E3;
+  border-radius: 2em;
 }
 
 img {
-  border: 10px solid #ADB9E3;
-  border-radius: 1em;
+
   width: 100%;
 }
 
 #event-wrapper {
   grid-area: blockquote;
   padding: 3% 5%;
-  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 3% 5%;
 }
 
 #timeEvent {
   background-color: rgba(242, 237, 102, 0.8);
   border-radius: 10%;
   border-bottom: 4px solid #000;
-  margin: 0;
-  height: 95%;
-  width: 95%;
+  margin: 3% 5%;
+  height: 85%;
+/*   width: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,9 +215,9 @@ img {
 
 #button-wrapper {
   grid-area: button;
-  display: flex;
+/*   display: flex; */
   padding: 3% 5%;
-  justify-content: center;
+/*   justify-content: center; */
   margin: 0;
 }
 
@@ -223,6 +225,7 @@ img {
   font-family: 'Raleway', sans-serif;
   background-image: linear-gradient(to right, #f27b66 , #F2ED66);
   text-transform: uppercase;
+  text-decoration: underline;
   letter-spacing: 2px;
   border-radius: 35%;
   border-bottom: .25em solid gray;
@@ -230,17 +233,17 @@ img {
   font-weight: bold;
   width: 100%;
   min-height: 5em;
-  margin: 0;
-  padding: 3% 5%;
+/*   margin: 0;
+  padding: 3% 5%; */
 }
 
 .selectors {
   font-family: 'Raleway', sans-serif;
   display: flex;
   align-items: center;
-  padding: 3% 0;
+  padding: 3% 5%;
   flex-direction: column;
-  margin:0;
+  margin: 0;
 }
 
 .selectors p {
@@ -250,11 +253,11 @@ img {
   text-align: center;
   height: 3em;
   min-width: 4.2em;
-  flex: none;
+/*   flex: none; */
 }
 
 .selectors select {
-  margin-top: .5em;
+  margin: 3% 5% 2em 5%;
   background-color: #ADB9E3;
   font-family: 'Raleway', sans-serif;
   min-width: 4.2em;
@@ -288,12 +291,17 @@ img {
 
 footer {
   grid-area: footer;
-  display: flex;
-  padding: 5%;
+/*   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   font-size: 1.25em;
   background-color: #9AD5CA;
+  padding: 3% 5%;
+  text-align: center
+}
+
+footer p {
+  margin: 0;
   padding: 3% 5%;
 }
 
