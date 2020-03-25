@@ -14,7 +14,7 @@ var bedTime = 22; // 10pm
 var beachTime;
 
 var updateClock = function() {
-  // Link JS variables to HMTL elements
+  // Assign JS variables to HMTL elements
   var fitnessImageJS = document.getElementById('fitnessImage');
   var eventTitleJS = document.getElementById('eventTitle');
   var timeEventJS = document.getElementById('timeEvent');
@@ -24,7 +24,7 @@ var updateClock = function() {
   var messageTitle;
   var messageText;
 
-  // Assign dynamic text/image variables to time events
+  // Assign dynamic variables to time events
   if (time < wakeUpTime || time > bedTime) {
     messageTitle = "Shut it down";
     messageText = "Stop looking at the clock & go to sleep.";
@@ -77,7 +77,7 @@ var updateClock = function() {
 
   } else if (time == beachTime) {
     messageTitle = "Surfs Up";
-    messageText = "Fun in the sun. Because beaches, that's why.";
+    messageText = "Have some fun in the sun. Because beaches, that's why.";
     messageImage = "img/beachTime.gif";
 
   } else {

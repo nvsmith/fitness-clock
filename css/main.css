@@ -15,7 +15,7 @@ html {
   text-align: left;
   margin: 0;
   background-color: #1C2228;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 a {
@@ -136,6 +136,7 @@ h1 {
 #tagline {
   grid-area: tagline;
   padding: 3% 5%;
+  font-family: 'Lato', sans-serif;
 }
 
 #tagline h4 {
@@ -156,7 +157,7 @@ h1 {
 
 #clock {
   align-items: center;
-  background-color: #E9D2BF;
+  background-color: #D6AB6E;
   border-bottom: 5px solid #271309;
   border-radius: 50%;
   color: #F4E1D7;
@@ -165,14 +166,14 @@ h1 {
   font-size: 2em;
   height: 6.5em;
   justify-content: center;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   margin: auto;
   text-align: center;
   text-shadow:
     -1px -1px 0 #271309,
     1px -1px 0 #271309,
-    -1px 5px 0 #271309,
-    1px 5px 0 #271309;
+    -1px 3px 0 #271309,
+    1px 3px 0 #271309;
   width: 6.5em;
 }
 
@@ -215,6 +216,7 @@ img {
   font-size: 1.25em;
   margin: 0;
   text-align: left;
+  font-family: 'Lato', sans-serif;
 }
 
 #button-wrapper {
@@ -223,22 +225,16 @@ img {
 }
 
 #beachTimeButton {
-  background-image: linear-gradient(to right, #945947, #FFFBF0);
+  background-image: linear-gradient(to right, #40EED7, #F7E6CD);
   border-bottom: 5px solid #271309;
   border-radius: 35%;
-  color: #F4E1D7;
-  font-family: 'Raleway', sans-serif;
+  color: #271309;
+  font-family: 'Lato', sans-serif;
   font-size: 1.25em;
   font-weight: bold;
   letter-spacing: 2px;
   min-height: 5em;
-  /* text-decoration: underline; */
-  text-shadow:
-    -1px -1px 0 #271309,
-    1px -1px 0 #271309,
-    -1px 2px 0 #271309,
-    1px 2px 0 #271309;
-  /* text-transform: uppercase; */
+  text-decoration: underline;
   width: 100%;
 }
 
@@ -246,7 +242,6 @@ img {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-family: 'Raleway', sans-serif;
   margin: 3% 5%;
   padding: 3% 5%;
 }
@@ -265,7 +260,6 @@ img {
   border-bottom: 5px solid #271309;
   border-radius: 20%;
   color: #271309;
-  font-family: 'Raleway', sans-serif;
   margin-bottom: 2em;
 }
 
@@ -299,6 +293,7 @@ footer {
   display: flex;
   grid-area: footer;
   justify-content: center;
+  letter-spacing: 2px;
   padding: 3% 5%;
 }
 
