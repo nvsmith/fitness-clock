@@ -1,5 +1,6 @@
 <!doctype html>
-<html class="no-js" lang="eng">
+<html class="no-js" lang="en">
+
   <head>
     <meta charset="utf-8">
     <title>Fitness Clock</title>
@@ -15,7 +16,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,400;1,800&family=Roboto+Slab:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 
     <meta name="theme-color" content="#fafafa">
   </head>
@@ -40,11 +41,13 @@
       </div>
 
       <figure>
-        <img id="fitnessImage" src="" alt="fit man">
+        <img id="fitnessImage" src="img/fitness.jpg" alt="fit man">
       </figure>
 
       <div id="event-wrapper">
-          <blockquote id="timeEvent">This is where time events are reported</blockquote>
+        <h3 id="eventTitle">This is the event title</h3>
+
+        <blockquote id="timeEvent">This is where time events are reported</blockquote>
       </div>
 
       <div id="button-wrapper">
@@ -52,7 +55,7 @@
       </div>
 
       <div class="selectors">
-        <p id="select1">Set Wakeup Time</p>
+        <p id="select1">Set Wake Time</p>
 
         <select id="wakeUpTimeSelector">
           <option value="1">1 AM - 2AM</option>
@@ -171,4 +174,5 @@
 
     <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
+
 </html>

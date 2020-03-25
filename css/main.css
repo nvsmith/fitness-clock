@@ -104,6 +104,7 @@ textarea {
   margin: auto;
   max-width: 800px;
   width: auto;
+  gap: 0 1em;
   grid-template-areas:
     "header header header"
     "tagline tagline tagline"
@@ -114,7 +115,6 @@ textarea {
     "wakeUpTimeSelector lunchTimeSelector bedTimeSelector"
     "footer footer footer";
   grid-template-columns: repeat(3, minmax(100px, 1fr));
-  gap: 0 1em;
 }
 
 /* Grid items */
@@ -134,9 +134,9 @@ h1 {
 }
 
 #tagline {
+  font-family: 'Lato', sans-serif;
   grid-area: tagline;
   padding: 3% 5%;
-  font-family: 'Lato', sans-serif;
 }
 
 #tagline h4 {
@@ -186,8 +186,8 @@ figure {
 }
 
 img {
-  width: 100%;
   border-bottom: 5px solid #271309;
+  width: 100%;
 }
 
 #event-wrapper {
@@ -206,17 +206,17 @@ img {
 }
 
 #eventTitle {
-  text-align: left;
   font-size: 1.6em;
+  text-align: left;
   text-transform: capitalize;
   width: 100%;
 }
 
 #timeEvent {
+  font-family: 'Lato', sans-serif;
   font-size: 1.25em;
   margin: 0;
   text-align: left;
-  font-family: 'Lato', sans-serif;
 }
 
 #button-wrapper {
@@ -247,12 +247,12 @@ img {
 }
 
 .selectors p {
+  color: #E9D2BF;
   height: 2.5em;
   letter-spacing: 2px;
   padding: 3% 5%;
   text-align: center;
   text-transform: uppercase;
-  color: #E9D2BF;
 }
 
 .selectors select {
