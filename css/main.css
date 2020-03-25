@@ -14,8 +14,12 @@ html {
   line-height: 1.4;
   text-align: left;
   margin: 0;
-  background-color: #e6e6e6;
+  background-color: #1C2228;
   font-family: 'Roboto Slab', serif;
+}
+
+a {
+  color: inherit;
 }
 
 /*
@@ -93,13 +97,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /***** Grid template *****/
-/* Grid Container */
+/*** Grid Container ***/
 .page {
-  width: auto;
-  max-width: 800px;
-  margin: auto;
+  background-color: #1C2228;
   display: grid;
-  background-color: #ACDDE7;
+  margin: auto;
+  max-width: 800px;
+  width: auto;
   grid-template-areas:
     "header header header"
     "tagline tagline tagline"
@@ -111,182 +115,158 @@ textarea {
     "footer footer footer";
   grid-template-columns: repeat(3, minmax(100px, 1fr));
   gap: 0 1em;
-/*   padding: 0 5%; */
 }
 
 /* Grid items */
 header {
+  background-color: #A1865E;
+  display: flex;
   grid-area: header;
- display: flex;
   justify-content: center;
-  background-color: #9AD5CA;
   padding: 3% 5%;
 }
 
 h1 {
-  text-align: center;
+  color: #F4E1D7;
   font-size: 2em;
-/*   margin: 0; */
-/*   padding: 3% 5%; */
-/*   width: 100%; */
   letter-spacing: 2px;
+  text-align: center;
 }
 
 #tagline {
   grid-area: tagline;
-/*   display: flex;
-  justify-content: space-around; */
   padding: 3% 5%;
-/*   margin: 0; */
-  background-color: black;
-  text-align: ;
 }
-
 
 #tagline h4 {
-  font-size: 1.25em;
-/*   margin: 0; */
-/*   padding: 3% 5% 2em 5%; */
-  background-color: white;
-  padding: 3% 10%;
+  background-color: #FDF1DA;
   border-radius: 3em;
+  color: #271309;
+  font-size: 1.25em;
+  padding: 3% 10%;
 }
 
-
 #clock-wrapper {
-  grid-area: clock;
-/*   display: flex; */
-/*   padding: 3% 5%; */
-/*   justify-content: center;
-  align-items: center; */
-/*   margin: 3% 5%; */
-  background-color: #ADB9E3;
+  background-color: #715052;
   border-radius: 1em;
-  padding: 3% 5%;
+  grid-area: clock;
   margin: 3% 5%;
+  padding: 3% 5%;
 }
 
 #clock {
-  font-family: 'Orbitron', sans-serif;
-  background-color: rgba(242, 237, 102, 0.8);
-  border-radius: 50%;
-  border-bottom: 4px solid #000;
-  font-size: 2em;
-  display: flex;
-  justify-content: center;
   align-items: center;
-/*   padding: 3% 5%; */
-  width: 6em;
-  height: 6em;
+  background-color: #E9D2BF;
+  border-bottom: 5px solid #271309;
+  border-radius: 50%;
+  color: #F4E1D7;
+  display: flex;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  height: 6.5em;
+  justify-content: center;
+  letter-spacing: 2px;
   margin: auto;
   text-align: center;
+  text-shadow:
+    -1px -1px 0 #271309,
+    1px -1px 0 #271309,
+    -1px 5px 0 #271309,
+    1px 5px 0 #271309;
+  width: 6.5em;
 }
 
 figure {
-  grid-area: figure;
-/*   display: flex; */
-  padding: 3% 5%;
-/*   justify-content: center; */
-/*   margin: 3% 5%; */
-  /* border: 2px solid red; */
-  border: 2em solid #ADB9E3;
   border-radius: 2em;
+  border: 2em solid #715052;
+  grid-area: figure;
   margin: 3% 5%;
+  padding: 3% 5%;
 }
 
 img {
   width: 100%;
+  border-bottom: 5px solid #271309;
 }
 
 #event-wrapper {
-  grid-area: blockquote;
-  background-color: rgba(242, 237, 102, 0.8);
+  align-self: center;
+  background-color: #E9D2BF;
+  border-bottom: 5px solid #271309;
   border-radius: 10%;
-  border-bottom: 4px solid #000;
-/*   padding: 3% 5%; */
+  color: #271309;
   display: flex;
   flex-direction: column;
-/*   align-items: center; */
-  justify-content: center;
-/*   margin: 3% 10% 3% 5%; */
+  grid-area: blockquote;
   height: 75%;
-  align-self: center;
+  justify-content: center;
   margin: 6% 10%;
   padding: 3% 5%;
 }
 
 #eventTitle {
-font-size: 1.6em;/*   margin: 0;
-  width: 100%; */
   text-align: left;
-/*   margin: 3% 5%; */
-/*   padding: 3% 5%; */
+  font-size: 1.6em;
   text-transform: capitalize;
+  width: 100%;
 }
 
 #timeEvent {
-/*   width: 100%; */
-/*   display: flex; */
-/*   align-items: center; */
-/*   justify-content: flex-start; */
   font-size: 1.25em;
-/*   margin: 3% 5%; */
-/*   padding: 3% 5%; */
-  text-align: left;
   margin: 0;
+  text-align: left;
 }
 
 #button-wrapper {
   grid-area: button;
-/*   display: flex; */
-/*   padding: 3% 5%; */
-/*   justify-content: center; */
-/*   margin: 0; */
   margin: 3% 5%;
 }
 
 #beachTimeButton {
-  font-family: 'Raleway', sans-serif;
-  background-image: linear-gradient(to right, #f27b66 , #F2ED66);
-  text-transform: uppercase;
-  text-decoration: underline;
-  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #945947, #FFFBF0);
+  border-bottom: 5px solid #271309;
   border-radius: 35%;
-  border-bottom: .25em solid gray;
+  color: #F4E1D7;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.25em;
   font-weight: bold;
-  width: 100%;
+  letter-spacing: 2px;
   min-height: 5em;
+  /* text-decoration: underline; */
+  text-shadow:
+    -1px -1px 0 #271309,
+    1px -1px 0 #271309,
+    -1px 2px 0 #271309,
+    1px 2px 0 #271309;
+  /* text-transform: uppercase; */
+  width: 100%;
 }
 
 .selectors {
-  font-family: 'Raleway', sans-serif;
-  display: flex;
   align-items: center;
-  padding: 3% 5%;
+  display: flex;
   flex-direction: column;
-margin: 3% 5%;
-  border: 2px solid red;
+  font-family: 'Raleway', sans-serif;
+  margin: 3% 5%;
+  padding: 3% 5%;
 }
 
 .selectors p {
-  text-transform: uppercase;
+  height: 2.5em;
   letter-spacing: 2px;
-/* margin: 1em 0; */
   padding: 3% 5%;
   text-align: center;
-  height: 2.5em;
-/*   min-width: 4.2em; */
-/*   flex: none; */
+  text-transform: uppercase;
+  color: #E9D2BF;
 }
 
 .selectors select {
-  background-color: #ADB9E3;
-  font-family: 'Raleway', sans-serif;
-/*   min-width: 4.2em; */
+  background-color: #E9D2BF;
+  border-bottom: 5px solid #271309;
   border-radius: 20%;
-  border-bottom: .25em solid gray;
-  margin: 1em 0 2em 0;
+  color: #271309;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 2em;
 }
 
 #select1 {
@@ -314,16 +294,12 @@ margin: 3% 5%;
 }
 
 footer {
+  background-color: #A1865E;
+  color: #F4E1D7;
+  display: flex;
   grid-area: footer;
-display: flex;
   justify-content: center;
-  background-color: #9AD5CA;
   padding: 3% 5%;
-}
-
-footer p {
-/*   margin: 0; */
-/*   padding: 3% 5%; */
 }
 
 /* ==========================================================================
