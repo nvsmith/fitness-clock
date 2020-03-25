@@ -190,6 +190,14 @@ img {
   width: 100%;
 }
 
+#credit {
+  grid-area: figure;
+  color: #F4E1D7;
+  text-align: right;
+  font-size: .5em;
+  font-style: italic;
+}
+
 #event-wrapper {
   align-self: center;
   background-color: #E9D2BF;
@@ -199,7 +207,7 @@ img {
   display: flex;
   flex-direction: column;
   grid-area: blockquote;
-  height: 75%;
+  height: 80%;
   justify-content: center;
   margin: 6% 10%;
   padding: 3% 5%;
