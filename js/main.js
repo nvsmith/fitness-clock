@@ -1,13 +1,13 @@
 // Fetch the time
 var time = new Date().getHours();
 
-// Define timeEvent times
+// Define hours for timeEvent
 var wakeUpTime = 6; // 6am
 var meal1 = 7; // 7am
 var yogaTime = 8; // 8am
-var meal2 = 1; // 12pm
+var meal2 = 12; // 12pm
 var gymTime = 13; // 1pm
-var meal3 = 12; // 3pm
+var meal3 = 15; // 3pm
 var meal4 = 18; // 6pm
 var meal5 = 20; // 8pm
 var bedTime = 22; // 10pm
