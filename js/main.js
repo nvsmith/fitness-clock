@@ -15,9 +15,9 @@ var beachTime;
 
 var updateClock = function() {
   // Assign JS variables to HMTL elements
-  var fitnessImageJS = document.getElementById('fitnessImage');
-  var eventTitleJS = document.getElementById('eventTitle');
-  var timeEventJS = document.getElementById('timeEvent');
+  var fitnessImageJS = document.getElementById("fitnessImage");
+  var eventTitleJS = document.getElementById("eventTitle");
+  var timeEventJS = document.getElementById("timeEvent");
 
   // Placeholder variables for dynamic content
   var messageImage;
@@ -28,52 +28,52 @@ var updateClock = function() {
   if (time < wakeUpTime || time > bedTime) {
     messageTitle = "Shut it down";
     messageText = "Stop looking at the clock & go to sleep.";
-    messageImage = "img/sleepTime.png"
+    messageImage = "img/sleepTime.png";
 
   } else if (time == wakeUpTime) {
     messageTitle = "Wake Up";
     messageText = "Good morning, Starshine. The earth says hello.";
-    messageImage = "img/wakeUpTime.jpg"
+    messageImage = "img/wakeUpTime.jpg";
 
   } else if (time == meal1) {
     messageTitle = "Meal #1";
     messageText = "Brekkie.";
-    messageImage = "img/meal1.JPG"
+    messageImage = "img/meal1.JPG";
 
   } else if (time == yogaTime) {
     messageTitle = "Yoga Time";
     messageText = "Get down with the dog.";
-    messageImage = "img/yogaTime.jpg"
+    messageImage = "img/yogaTime.jpg";
 
   } else if (time == meal2) {
     messageTitle = "Meal #2";
     messageText = "Fuel up for the gym!";
-    messageImage = "img/meal2.jpg"
+    messageImage = "img/meal2.jpg";
 
   } else if (time == gymTime) {
     messageTitle = "Gym Time";
     messageText = "Date with the weights. Get to it!";
-    messageImage = "img/gymTime.jpg"
+    messageImage = "img/gymTime.jpg";
 
   } else if (time == meal3) {
     messageTitle = "Meal #3";
     messageText = "Refuel. You've earned it, bud.";
-    messageImage = "img/meal3.jpg"
+    messageImage = "img/meal3.jpg";
 
   } else if (time == meal4) {
     messageTitle = "Meal #4";
     messageText = "Time to eat again.";
-    messageImage = "img/meal4.jpg"
+    messageImage = "img/meal4.jpg";
 
   } else if (time == meal5) {
     messageTitle = "Meal #5";
     messageText = "Chow down one last time.";
-    messageImage = "img/meal5.jpg"
+    messageImage = "img/meal5.jpg";
 
   } else if (time == bedTime) {
     messageTitle = "Bed Time";
-    messageText = "Early to bed, early to rise, builds up your biceps, triceps, and thighs.";
-    messageImage = "img/bedTime.jpg"
+    messageText = "Early to bed & early to rise, builds up your biceps, triceps, and thighs.";
+    messageImage = "img/bedTime.jpg";
 
   } else if (time == beachTime) {
     messageTitle = "Surfs Up";
@@ -83,7 +83,7 @@ var updateClock = function() {
   } else {
     messageTitle = "Free Time";
     messageText = "Nothing scheduled right now. You're free as a bird.";
-    messageImage = "img/fitness.jpg"
+    messageImage = "img/fitness.jpg";
   }
 
   // Link timeEvent dynamic content to JS variable properties
@@ -97,7 +97,7 @@ var updateClock = function() {
 // Show the current time
 var showCurrentTime = function() {
   // Link JS variables to HMTL elements
-  var clockJS = document.getElementById('clock');
+  var clockJS = document.getElementById("clock");
 
   // Fetch the time
   var currentTime = new Date();
@@ -139,7 +139,7 @@ var oneSecond = 1000; // 1000 JS miliseconds per 1 second
 var myInterval = setInterval(updateClock, oneSecond);
 
 // Buttons & selectors to change dynamic message text/images
-var beachTimeButtonJS = document.getElementById('beachTimeButton');
+var beachTimeButtonJS = document.getElementById("beachTimeButton");
 var wakeUpTimeSelectorJS = document.getElementById("wakeUpTimeSelector");
 var lunchTimeSelectorJS = document.getElementById("lunchTimeSelector");
 var bedTimeSelectorJS = document.getElementById("bedTimeSelector");
@@ -173,7 +173,7 @@ var bedTimeEvent = function() {
 };
 
 // Event listeners for all buttons
-beachTimeButtonJS.addEventListener("click", beachEvent)
-wakeUpTimeSelectorJS.addEventListener('change', wakeUpEvent);
-lunchTimeSelectorJS.addEventListener('change', lunchEvent);
-bedTimeSelectorJS.addEventListener('change', bedTimeEvent);
+beachTimeButtonJS.addEventListener("click", beachEvent);
+wakeUpTimeSelectorJS.addEventListener("change", wakeUpEvent);
+lunchTimeSelectorJS.addEventListener("change", lunchEvent);
+bedTimeSelectorJS.addEventListener("change", bedTimeEvent);
