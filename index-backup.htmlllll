@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="eng">
-
   <head>
     <meta charset="utf-8">
     <title>Fitness Clock</title>
@@ -45,9 +44,7 @@
       </figure>
 
       <div id="event-wrapper">
-        <h3 id="eventTitle">This is the event title</h3>
-
-        <blockquote id="timeEvent">This is where time events are reported</blockquote>
+          <blockquote id="timeEvent">This is where time events are reported</blockquote>
       </div>
 
       <div id="button-wrapper">
@@ -55,7 +52,7 @@
       </div>
 
       <div class="selectors">
-        <p id="select1">Set Wake Time</p>
+        <p id="select1">Set Wakeup Time</p>
 
         <select id="wakeUpTimeSelector">
           <option value="1">1 AM - 2AM</option>
@@ -174,5 +171,4 @@
 
     <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
-
 </html>

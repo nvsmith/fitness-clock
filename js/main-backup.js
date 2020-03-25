@@ -16,79 +16,64 @@ var beachTime;
 var updateClock = function() {
   // Link JS variables to HMTL elements
   var fitnessImageJS = document.getElementById('fitnessImage');
-  var eventTitleJS = document.getElementById('eventTitle');
   var timeEventJS = document.getElementById('timeEvent');
 
   // Placeholder variables for dynamic content
   var messageImage;
-  var messageTitle;
   var messageText;
 
   // Assign dynamic text/image variables to time events
   if (time < wakeUpTime || time > bedTime) {
-    messageTitle = "Shut it down";
-    messageText = "Stop looking at the clock & go to sleep.";
+    messageText = "BEDTIME \n\n If you're reading this, stop looking at the clock & go to sleep.";
     messageImage = "img/sleepTime.png"
 
   } else if (time == wakeUpTime) {
-    messageTitle = "Wake Up";
-    messageText = "Good morning, Starshine. The earth says hello.";
+    messageText = "WAKE UP \n\n Good morning, Starshine. The earth says hello.";
     messageImage = "img/wakeUpTime.jpg"
 
   } else if (time == meal1) {
-    messageTitle = "Meal #1";
-    messageText = "Brekkie.";
+    messageText = "MEAL #1 \n\n Brekkie.";
     messageImage = "img/meal1.JPG"
 
   } else if (time == yogaTime) {
-    messageTitle = "Yoga Time";
-    messageText = "Get down with the dog.";
+    messageText = "YOGA TIME \n\n Get down with the dog.";
     messageImage = "img/yogaTime.jpg"
 
   } else if (time == meal2) {
-    messageTitle = "Meal #2";
-    messageText = "Fuel up for the gym!";
+    messageText = "MEAL #2 \n\n Fuel up for the gym!";
     messageImage = "img/meal2.jpg"
 
   } else if (time == gymTime) {
-    messageTitle = "Gym Time";
-    messageText = "Date with the weights. Get to it!";
+    messageText = "GYM TIME \n\n Date with the weights. Get to it!";
     messageImage = "img/gymTime.jpg"
 
   } else if (time == meal3) {
-    messageTitle = "Meal #3";
-    messageText = "Refuel. You've earned it, bud.";
+    messageText = "MEAL #3 \n\n Refuel. You've earned it, bud.";
     messageImage = "img/meal3.jpg"
 
   } else if (time == meal4) {
-    messageTitle = "Meal #4";
-    messageText = "Time to eat again.";
+    messageText = "MEAL #4 \n\n Time to eat again.";
     messageImage = "img/meal4.jpg"
 
   } else if (time == meal5) {
-    messageTitle = "Meal #5";
-    messageText = "Chow down one last time.";
+    messageText = "MEAL #5 \n\n Chow down one last time.";
     messageImage = "img/meal5.jpg"
 
   } else if (time == bedTime) {
-    messageTitle = "Bed Time";
-    messageText = "Early to bed, early to rise, builds up your biceps, triceps, and thighs.";
+    messageText = "BEDTIME \n\n Early to bed, early to rise, builds up your biceps, triceps, and thighs.";
     messageImage = "img/bedTime.jpg"
 
   } else if (time == beachTime) {
-    messageTitle = "Surfs Up";
-    messageText = "Fun in the sun. Because beaches, that's why.";
+    messageText = "Fun in the sun.\n\n Because beaches, that's why.";
     messageImage = "img/beachTime.gif";
 
   } else {
-    messageTitle = "Free Time";
-    messageText = "Nothing scheduled right now. You're free as a bird.";
+    messageText = "Nothing scheduled right now.\n\n You're free as a bird.";
     messageImage = "img/fitness.jpg"
   }
 
   // Link timeEvent dynamic content to JS variable properties
   fitnessImageJS.src = messageImage;
-  eventTitleJS.innerText = messageTitle;
   timeEventJS.innerText = messageText;
 
   showCurrentTime();

@@ -96,7 +96,7 @@ textarea {
 /* Grid Container */
 .page {
   width: auto;
-  max-width: 800px;
+  max-width: 1200px;
   margin: auto;
   display: grid;
   background-color: #ACDDE7;
@@ -110,60 +110,52 @@ textarea {
     "wakeUpTimeSelector lunchTimeSelector bedTimeSelector"
     "footer footer footer";
   grid-template-columns: repeat(3, minmax(100px, 1fr));
-  gap: 0 1em;
-/*   padding: 0 5%; */
 }
 
 /* Grid items */
 header {
   grid-area: header;
- display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   background-color: #9AD5CA;
-  padding: 3% 5%;
 }
 
 h1 {
   text-align: center;
   font-size: 2em;
-/*   margin: 0; */
-/*   padding: 3% 5%; */
-/*   width: 100%; */
+  margin: 0;
+  padding: 3% 5%;
+  width: 100%;
   letter-spacing: 2px;
 }
 
 #tagline {
   grid-area: tagline;
-/*   display: flex;
-  justify-content: space-around; */
+  display: flex;
+  justify-content: space-around;
   padding: 3% 5%;
-/*   margin: 0; */
-  background-color: black;
-  text-align: ;
+  margin: 0;
 }
 
 
 #tagline h4 {
   font-size: 1.25em;
-/*   margin: 0; */
-/*   padding: 3% 5% 2em 5%; */
-  background-color: white;
-  padding: 3% 10%;
-  border-radius: 3em;
+  margin: 0;
+  font-weight: 800;
+  margin: 0;
+  padding: 3% 5% 2em 5%;
 }
 
 
 #clock-wrapper {
   grid-area: clock;
 /*   display: flex; */
-/*   padding: 3% 5%; */
+  padding: 3% 5%;
 /*   justify-content: center;
   align-items: center; */
-/*   margin: 3% 5%; */
+  margin: 3% 5%;
   background-color: #ADB9E3;
   border-radius: 1em;
-  padding: 3% 5%;
-  margin: 3% 5%;
 }
 
 #clock {
@@ -184,65 +176,49 @@ h1 {
 
 figure {
   grid-area: figure;
-/*   display: flex; */
+  display: flex;
   padding: 3% 5%;
-/*   justify-content: center; */
-/*   margin: 3% 5%; */
+  justify-content: center;
+  margin: 3% 5%;
   /* border: 2px solid red; */
   border: 2em solid #ADB9E3;
   border-radius: 2em;
-  margin: 3% 5%;
 }
 
 img {
+
   width: 100%;
 }
 
 #event-wrapper {
   grid-area: blockquote;
-  background-color: rgba(242, 237, 102, 0.8);
-  border-radius: 10%;
-  border-bottom: 4px solid #000;
-/*   padding: 3% 5%; */
-  display: flex;
-  flex-direction: column;
-/*   align-items: center; */
-  justify-content: center;
-/*   margin: 3% 10% 3% 5%; */
-  height: 75%;
-  align-self: center;
-  margin: 6% 10%;
   padding: 3% 5%;
-}
-
-#eventTitle {
-font-size: 1.6em;/*   margin: 0;
-  width: 100%; */
-  text-align: left;
-/*   margin: 3% 5%; */
-/*   padding: 3% 5%; */
-  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3% 5%;
 }
 
 #timeEvent {
+  background-color: rgba(242, 237, 102, 0.8);
+  border-radius: 10%;
+  border-bottom: 4px solid #000;
+  margin: 3% 5%;
+  height: 85%;
 /*   width: 100%; */
-/*   display: flex; */
-/*   align-items: center; */
-/*   justify-content: flex-start; */
-  font-size: 1.25em;
-/*   margin: 3% 5%; */
-/*   padding: 3% 5%; */
-  text-align: left;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3% 5%;
+  font-size: 1.5em;
 }
 
 #button-wrapper {
   grid-area: button;
 /*   display: flex; */
-/*   padding: 3% 5%; */
+  padding: 3% 5%;
 /*   justify-content: center; */
-/*   margin: 0; */
-  margin: 3% 5%;
+  margin: 0;
 }
 
 #beachTimeButton {
@@ -257,6 +233,8 @@ font-size: 1.6em;/*   margin: 0;
   font-weight: bold;
   width: 100%;
   min-height: 5em;
+/*   margin: 0;
+  padding: 3% 5%; */
 }
 
 .selectors {
@@ -265,28 +243,26 @@ font-size: 1.6em;/*   margin: 0;
   align-items: center;
   padding: 3% 5%;
   flex-direction: column;
-margin: 3% 5%;
-  border: 2px solid red;
+  margin: 0;
 }
 
 .selectors p {
   text-transform: uppercase;
   letter-spacing: 2px;
-/* margin: 1em 0; */
-  padding: 3% 5%;
+  margin: 0;
   text-align: center;
-  height: 2.5em;
-/*   min-width: 4.2em; */
+  height: 3em;
+  min-width: 4.2em;
 /*   flex: none; */
 }
 
 .selectors select {
+  margin: 3% 5% 2em 5%;
   background-color: #ADB9E3;
   font-family: 'Raleway', sans-serif;
-/*   min-width: 4.2em; */
+  min-width: 4.2em;
   border-radius: 20%;
   border-bottom: .25em solid gray;
-  margin: 1em 0 2em 0;
 }
 
 #select1 {
@@ -315,15 +291,18 @@ margin: 3% 5%;
 
 footer {
   grid-area: footer;
-display: flex;
+/*   display: flex;
   justify-content: center;
+  align-items: center; */
+  font-size: 1.25em;
   background-color: #9AD5CA;
   padding: 3% 5%;
+  text-align: center
 }
 
 footer p {
-/*   margin: 0; */
-/*   padding: 3% 5%; */
+  margin: 0;
+  padding: 3% 5%;
 }
 
 /* ==========================================================================
