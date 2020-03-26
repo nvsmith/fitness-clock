@@ -150,6 +150,7 @@ h1 {
 #clock-wrapper {
   background-color: #715052;
   border-radius: 1em;
+  display: flex;
   grid-area: clock;
   margin: 3% 5%;
   padding: 3% 5%;
@@ -163,11 +164,12 @@ h1 {
   color: #F4E1D7;
   display: flex;
   font-family: 'Orbitron', sans-serif;
-  font-size: 2em;
+  font-size: 1em;
   height: 6.5em;
   justify-content: center;
   letter-spacing: 5px;
   margin: auto;
+  padding: 5%;
   text-align: center;
   text-shadow:
     -1px -1px 0 #271309,
@@ -387,9 +389,15 @@ footer {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media screen and (min-width:400px) {
+   	#clock {
+       font-size: 150%;
+     }
+   }
+
+   /* @media only screen and (min-width: 35em) {
+     /* Style adjustments for viewports that meet the condition */
+   } */
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
