@@ -31,13 +31,13 @@ var updateClock = function() {
     messageTitle = "Shut it down";
     messageText = "Stop looking at the clock & go to sleep.";
     messageImage = "img/sleepTime.png";
-    imageCredit = "Calum von Moger";
+    imageCredit = "M&F - Calum von Moger";
 
   } else if (time == wakeUpTime) {
     messageTitle = "Wake Up";
     messageText = "Good morning, Starshine. The earth says hello.";
     messageImage = "img/wakeUpTime.jpg";
-    imageCredit = "Simeon Panda";
+    imageCredit = "M&F - Simeon Panda";
 
   } else if (time == meal1) {
     messageTitle = "Meal #1";
@@ -61,7 +61,7 @@ var updateClock = function() {
     messageTitle = "Gym Time";
     messageText = "Date with the weights. Get to it!";
     messageImage = "img/gymTime.jpg";
-    imageCredit = "Jonathan Delarosa & Flex Lewis";
+    imageCredit = "M&F - Jonathan Delarosa & Flex Lewis";
 
   } else if (time == meal3) {
     messageTitle = "Meal #3";
@@ -85,7 +85,7 @@ var updateClock = function() {
     messageTitle = "Bed Time";
     messageText = "Early to bed & early to rise, builds up your biceps, triceps, and thighs.";
     messageImage = "img/bedTime.jpg";
-    imageCredit = "Matt Evans";
+    imageCredit = "M&F - Matt Evans";
 
   } else if (time == beachTime) {
     messageTitle = "Surfs Up";
