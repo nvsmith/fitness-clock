@@ -1,1 +1,41 @@
+# Original gitignore config
 img/original-images
+
+# ---- Newly added config ----
+# Ignore the following
+
+.DS_Store
+
+fitness-clock-design-files
+
+# WordPress Files
+wp-admin
+
+wp-content/ai1wm-backups
+wp-content/plugins
+wp-content/themes/twenty*
+wp-content/themes/index.php
+wp-content/upgrade
+wp-content/uploads
+wp-content/index.php
+
+wp-includes
+
+.htaccess
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-config.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
